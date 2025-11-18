@@ -28,6 +28,7 @@
     "react-player": "^2.16.0",
     "react-slick": "^0.31.0",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.19",
     "suneditor": "^2.47.5",
     "suneditor-react": "^3.6.1",
     "swiper": "^11.2.5"
