@@ -1,14 +1,5 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-import DragAndDrop from "@/components/Home/DragAndDrop";
 import NavBar from "@/components/NavBar/NavBar";
-import Banner from "@/components/Home/Banner";
 import { Footer } from "@/components/Shared/Footer";
-import ChooseOstello from "@/components/Home/ChooseOstello";
-import EducationalResources from "@/components/Home/EducationalResources";
-import Carousel from "react-elastic-carousel";
-import Banner2 from "@/components/Home/Banner2";
-import Faq from "@/components/Shared/Faq";
 import Vision from "@/components/Home/Vision";
 import SuccessStory from "@/components/Home/SuccessStory";
 import Together from "@/components/Home/Together";
@@ -19,16 +10,6 @@ import BannerSection from "@/components/Home/BannerSection";
 import TabSection from "@/components/Home/TabSection";
 import Experience from "@/components/Home/Experience";
 import Innovate from "@/components/Home/Innovate";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
   return (
