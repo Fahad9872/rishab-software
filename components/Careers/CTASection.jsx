@@ -8,14 +8,14 @@ export default function CTASection() {
       {/* Top Divider Shape */}
       <div className="w-full overflow-hidden leading-[0]">
         <svg
-          className="w-full h-[30px] md:h-[80px] rotate-180"
+          className="w-full h-[30px] md:h-[60px] rotate-180"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
         >
           <path
             d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"
-            className="fill-white"
+            className="fill-[#181818]"
           ></path>
         </svg>
       </div>

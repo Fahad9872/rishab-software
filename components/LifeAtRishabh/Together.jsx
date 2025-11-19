@@ -104,10 +104,10 @@ const Together = () => {
   };
 
   return (
-    <div className="py-10 bg-[#F7F8FC]">
+    <div className="py-10 bg-[#181818] text-[#E1E1E1]">
       <div className=" px-5 relative w-[98%] mx-auto">
         <div className="text-center md:w-[50%] mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-3 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold  mb-3 text-center">
             Deciding. Experiencing. Thriving. Together.
           </h2>
           <p className="text-[#555555] text-lg mb-8 text-center">

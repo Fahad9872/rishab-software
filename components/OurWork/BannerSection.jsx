@@ -95,7 +95,7 @@ export default function BannerSection() {
           >
             <div
               key={study.id}
-              className={`md:max-w-[1400px] px-3 md:mx-auto flex flex-col md:flex-row items-center justify-between gap-10 `}
+              className={`md:max-w-[1600px] px-3 md:mx-auto flex flex-col md:flex-row items-center justify-between gap-10 `}
             >
               {/* Left Content */}
               <div className="max-w-xl">

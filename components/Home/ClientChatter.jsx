@@ -34,7 +34,7 @@ export default function ClientChatter() {
   const [playVideo, setPlayVideo] = useState(false);
 
   return (
-    <section className="  py-16 md:max-w-[1400px] px-3 md:mx-auto">
+    <section className="  py-16 md:max-w-[1600px] px-3 md:mx-auto">
       {/* Heading */}
       <div className="text-center mb-12">
         <motion.h1

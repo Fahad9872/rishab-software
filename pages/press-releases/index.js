@@ -27,10 +27,10 @@ const PressReleasess = [
 
 export default function PressReleases() {
   return (
-    <div className="">
+    <div className="bg-[#181818] text-[#E1E1E1]">
       <NavBar />
-      <div className="md:max-w-[1400px] px-3 md:mx-auto">
-        <div className="mb-10 ">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto">
+        <div className="my-10 ">
           {/* Breadcrumb */}
           <div className="text-[18px] text-gray-600 mb-6">
             <span className="text-gray-500">Home</span>{" "}
@@ -43,7 +43,7 @@ export default function PressReleases() {
             {PressReleasess.map((item) => (
               <div
                 key={item.id}
-                className="border border-gray/50 rounded-2xl shadow-sm overflow-hidden flex flex-col transition hover:shadow-md bg-white p-5"
+                className="border-2 border-[#525252]/50 shadow-[0_0_80px_rgba(155,81,224,0.4)] bg-[#181818] text-[#E1E1E1] p-5 rounded-2xl"
               >
                 {/* Image */}
                 <div className="relative w-full mb-3  flex items-center justify-center ">

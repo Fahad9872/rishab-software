@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useScreenWidth from "../hooks/useScreenWidth";
-import { motion } from "framer-motion"; // 👈 import framer-motion
+import { motion } from "framer-motion";
 
 const cards = [
   {
@@ -61,29 +61,8 @@ const cards = [
   },
 ];
 
-const NextArrow = ({ onClick }) => (
-  <button
-    onClick={onClick}
-    className="hidden md:block absolute -top-[80px]
-               sm:[right:10%] md:[right:12%] lg:[right:18%] xl:[right:22%] 2xl:[right:28%]
-               px-4 py-1.5 border border-gray/60 shadow rounded-[10px] 
-               hover:border-[#BB86FC] hover:text-[#BB86FC] transition z-10"
-  >
-    &#8594;
-  </button>
-);
-
-const PrevArrow = ({ onClick }) => (
-  <button
-    onClick={onClick}
-    className="hidden md:block absolute -top-[80px]
-               sm:[right:14%] md:[right:19%] lg:[right:23%] xl:[right:27%] 2xl:[right:32%]
-               px-4 py-1.5 border border-gray/60 shadow rounded-[10px] 
-               hover:border-[#BB86FC] hover:text-[#BB86FC] transition z-10"
-  >
-    &#8592;
-  </button>
-);
+// NextArrow and PrevArrow components are no longer needed as custom components
+// since we are manually controlling the slider with buttons inside the max-w div.
 
 const SuccessStory = () => {
   const sliderRef = useRef(null);
@@ -91,12 +70,12 @@ const SuccessStory = () => {
   const settings = {
     dots: false,
     infinite: true,
+    arrows: false,
     speed: 500,
     slidesToShow: screenWidth > 768 ? 4 : 1,
     slidesToScroll: 1,
     autoplay: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    // Removed nextArrow and prevArrow from settings
     responsive: [
       {
         breakpoint: 1024,
@@ -118,32 +97,52 @@ const SuccessStory = () => {
 
   return (
     <div className="md:py-20 py-10 bg-[#111111] text-[#E1E1E1]">
-      <div className=" px-5 relative">
-        <div className="justify-between items-start gap-6 md:max-w-[1400px] mx-auto mb-4">
-          {/* Heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="font-medium md:text-[40px] text-[30px] lg:flex-1"
-          >
-            Where Experience Meets Excellence
-          </motion.h1>
+      <div className="px-5 relative">
+        {/* Container for Heading and Custom Arrows, restricted to max width */}
+        <div className="flex justify-between items-start gap-6 md:max-w-[1600px] mx-auto mb-4 relative">
+          <div>
+            {/* Heading */}
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="font-medium md:text-[40px] text-[30px] lg:flex-1"
+            >
+              Where Experience Meets Excellence
+            </motion.h1>
 
-          {/* Subheading */}
-          <motion.h2
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-            viewport={{ once: true }}
-            className="font-normal md:text-[20px] text-[16px] text-[#787878]"
-          >
-            Delivering Real Solutions, Driving Real Impact, Achieving Remarkable
-            Results
-          </motion.h2>
+            {/* Subheading */}
+            <motion.h2
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+              viewport={{ once: true }}
+              className="font-normal md:text-[20px] text-[16px] text-[#787878]"
+            >
+              Delivering Real Solutions, Driving Real Impact, Achieving
+              Remarkable Results
+            </motion.h2>
+          </div>
+
+          {/* Custom Arrows for desktop, positioned relative to the max-w container */}
+          <div className="hidden md:flex items-start gap-3 absolute right-0 top-0 mt-2">
+            <button
+              onClick={() => sliderRef.current?.slickPrev()}
+              className="px-4 py-1.5 border border-gray/60 shadow rounded-[10px] hover:border-[#BB86FC] hover:text-[#BB86FC] transition z-10"
+            >
+              &#8592;
+            </button>
+            <button
+              onClick={() => sliderRef.current?.slickNext()}
+              className="px-4 py-1.5 border border-gray/60 shadow rounded-[10px] hover:border-[#BB86FC] hover:text-[#BB86FC] transition z-10"
+            >
+              &#8594;
+            </button>
+          </div>
         </div>
 
+        {/* The Slider component itself */}
         <Slider ref={sliderRef} {...settings}>
           {cards.map((card, index) => (
             <div key={index} className="p-3">
@@ -182,6 +181,7 @@ const SuccessStory = () => {
           ))}
         </Slider>
 
+        {/* Mobile Arrows, positioned below the slider */}
         <div className="flex justify-center items-center gap-4 mt-6 md:hidden">
           <button
             onClick={() => sliderRef.current?.slickPrev()}

@@ -50,7 +50,7 @@ export default function OfficeLocations() {
   ];
 
   return (
-    <section className="py-12 bg-white px-5">
+    <section className="py-12  px-5">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         {/* Left side banners */}
         <div className="flex flex-col gap-6">

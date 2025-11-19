@@ -7,10 +7,12 @@ export default function Webinar() {
   return (
     <div className="">
       <NavBar />
-      <div className="md:max-w-[1400px] px-3 md:mx-auto">
-        <TabSection />
+      <TabSection />
+      <div className="md:pt-16 p-5">
+        {" "}
         <ContactSection />
       </div>
+
       <Footer />
     </div>
   );

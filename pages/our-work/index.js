@@ -7,15 +7,17 @@ import BannerSection from "@/components/OurWork/BannerSection";
 
 export default function OurWork() {
   return (
-    <div className="">
+    <div className="bg-[#181818] text-[#E1E1E1]">
       <NavBar />
       <div className="my-5">
         <BannerSection />
       </div>
-      <div className="md:max-w-[1400px] px-3 md:mx-auto">
-        <TabSection />
+      <TabSection />
+      <div className="md:pt-16 p-5">
+        {" "}
         <ContactSection />
       </div>
+
       <Footer />
     </div>
   );

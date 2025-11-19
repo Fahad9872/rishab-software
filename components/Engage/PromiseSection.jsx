@@ -63,9 +63,9 @@ function ServiceAccordion({ service }) {
   return (
     <div className=" rounded-lg mb-4">
       <button
-        className={`w-full flex justify-between items-center px-4 py-3 text-left font-medium
-    ${isOpen ? "bg-purple-200 text-purple-800" : "bg-purple-50 "} 
-    hover:bg-purple-100`}
+        className={`w-full flex justify-between items-center px-4 py-3 text-left font-medium border-2 border-[#525252]/50
+    ${isOpen ? "" : ""} 
+    `}
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{service.title}</span>
@@ -73,7 +73,7 @@ function ServiceAccordion({ service }) {
       </button>
 
       {isOpen && (
-        <div className="p-4 bg-white md:flex gap-5">
+        <div className="p-4 border-t-0 border-2 border-[#525252]/50 md:flex gap-5">
           {service.iconUrl && (
             <img
               src={service.iconUrl}
@@ -127,9 +127,9 @@ function ServiceAccordion({ service }) {
 
 export default function PromiseSection() {
   return (
-    <div className="p-6  mx-auto">
+    <div className="p-6  mx-auto ">
       {/* Promise Section */}
-      <div className="bg-purple-50 rounded-lg p-6 flex justify-between items-center mb-6">
+      <div className="border-2 border-[#525252]/50 rounded-lg p-6 flex justify-between items-center mb-6">
         <div>
           <h2 className="text-2xl font-bold">
             <span className="text-purple-600">Promise</span> to our Customers

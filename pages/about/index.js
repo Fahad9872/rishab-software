@@ -40,7 +40,7 @@ export default function About() {
   const heroClickable = heroOpacity > 0.3; // stop catching clicks once mostly faded
 
   return (
-    <div className="relative">
+    <div className="relative bg-[#181818] text-[#E1E1E1]">
       <NavBar />
       <Banner />
       {/* Page content */}

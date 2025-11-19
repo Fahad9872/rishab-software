@@ -26,7 +26,7 @@ export default function PhotoGallery() {
   };
 
   return (
-    <section className="py-10 bg-white">
+    <section className="py-10 ">
       {/* Title */}
       <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6">
         Photo Gallery

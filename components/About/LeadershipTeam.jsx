@@ -87,10 +87,10 @@ export default function LeadershipTeam() {
   const { screenWidth } = useScreenWidth();
 
   return (
-    <section className="max-w-7xl mx-auto px-5 py-20">
+    <section className="max-w-7xl mx-auto px-5 py-20 bg-[#111111] text-[#E1E1E1]">
       <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
         {/* First Column as Text Card */}
-        <div className="p-6 rounded-2xl  text-center bg-white">
+        <div className="p-6 rounded-2xl  text-center border-2 border-[#525252]/50">
           <h2 className="text-2xl md:text-3xl font-bold">
             Our <span className="text-pink-600">Leadership</span> Team
           </h2>
@@ -104,7 +104,7 @@ export default function LeadershipTeam() {
         {leaders.map((leader, i) => (
           <div
             key={i}
-            className="p-6 rounded-2xl cursor-pointer text-center transition-all duration-300 bg-white hover:bg-gradient-to-b hover:from-blue-500 hover:to-blue-200 hover:text-white group"
+            className="p-6 rounded-2xl cursor-pointer text-center transition-all duration-300  hover:bg-gradient-to-b hover:from-blue-500 hover:to-blue-200 hover:text-white group border-2 border-[#525252]/50"
           >
             <div className="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-200">
               <img

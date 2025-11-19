@@ -50,7 +50,7 @@ export default function FacilitySection() {
         )}
       </div>
 
-      <div className="bg-[#edf0f8] py-20">
+      <div className="bg-[#111111] text-[#E1E1E1] py-20">
         {/* Benefits Section */}
         <div className="mt-10 text-center">
           <h3 className="text-xl md:text-2xl font-bold">
@@ -66,7 +66,7 @@ export default function FacilitySection() {
         {/* Cards */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mt-8 max-w-6xl mx-auto">
           {/* Career Enhancement */}
-          <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+          <div className="border-2 border-[#525252]/50 rounded-2xl shadow-md p-6 hover:shadow-lg transition">
             <FaBriefcase className="text-purple-600 text-3xl mb-4" />
             <h4 className="font-semibold text-lg">
               Career Enhancement Opportunities
@@ -80,7 +80,7 @@ export default function FacilitySection() {
           </div>
 
           {/* Collaboration */}
-          <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+          <div className="border-2 border-[#525252]/50 rounded-2xl shadow-md p-6 hover:shadow-lg transition">
             <FaUsers className="text-green-600 text-3xl mb-4" />
             <h4 className="font-semibold text-lg">An Ethos of Collaboration</h4>
             <p className="text-gray-600 text-sm mt-2">
@@ -90,7 +90,7 @@ export default function FacilitySection() {
           </div>
 
           {/* Open Office */}
-          <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+          <div className="border-2 border-[#525252]/50 rounded-2xl shadow-md p-6 hover:shadow-lg transition">
             <FaBuilding className="text-blue-600 text-3xl mb-4" />
             <h4 className="font-semibold text-lg">
               Productive Open Office Space
@@ -100,7 +100,7 @@ export default function FacilitySection() {
           </div>
 
           {/* Celebration */}
-          <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+          <div className="border-2 border-[#525252]/50 rounded-2xl shadow-md p-6 hover:shadow-lg transition">
             <FaBirthdayCake className="text-red-500 text-3xl mb-4" />
             <h4 className="font-semibold text-lg">A Culture of Celebration</h4>
             <p className="text-gray-600 text-sm mt-2">

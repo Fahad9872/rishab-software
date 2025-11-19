@@ -32,23 +32,23 @@ const SingleService = ({ servicename }) => {
     <div className="">
       <NavBar />
       <BannerSection name={name} />
-      <div className="md:max-w-[1400px] px-3 md:mx-auto">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto">
         <DataAnalyticsSection />
       </div>
       <SuccessStory />
       <DataTabs />
-      <div className="md:max-w-[1400px] px-3 md:mx-auto">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto">
         <DataAnalytics />
       </div>
       <CTASection />
       <GlobalClients />
       <Offer />
       <FaqSection />
-      <div className="md:max-w-[1400px] px-3 md:mx-auto mt-5">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto mt-5">
         <Vision />
       </div>
       <Faq />
-      <div className="md:max-w-[1400px] px-3 md:mx-auto mt-5">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto mt-5">
         <ContactSection />
       </div>
       <Footer />

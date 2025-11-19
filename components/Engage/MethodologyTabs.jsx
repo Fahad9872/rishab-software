@@ -33,7 +33,7 @@ export default function MethodologyTabs() {
   const activeContent = tabs.find((tab) => tab.id === activeTab);
 
   return (
-    <section className="py-12 px-4 md:px-12 bg-white">
+    <section className="py-12 px-4 md:px-12 ">
       <div className=" mx-auto">
         {/* Heading */}
         <div className="md:flex md:items-start md:justify-between mb-8">

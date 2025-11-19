@@ -167,7 +167,7 @@ const BannerSection = () => {
           ))}
         </Slider>
 
-        <div className="absolute bottom-0  left-1/2 transform -translate-x-1/2 w-full text-white md:max-w-[1400px] mx-auto">
+        <div className="absolute bottom-0  left-1/2 transform -translate-x-1/2 w-full text-white md:max-w-[1600px] mx-auto">
           {/* Tabs with Progress Bar */}
           <div className="md:grid hidden grid-cols-5 mb-10 space-x-4 ">
             {data.map((item, index) => (

@@ -48,7 +48,7 @@ export default function PartnerSection() {
         {cards.map((card, idx) => (
           <div
             key={idx}
-            className={`relative overflow-hidden rounded-xl shadow-lg p-6 transition-all duration-500 group ${card.bgColor}`}
+            className={`relative overflow-hidden rounded-xl shadow-lg p-6 transition-all duration-500 group border-2 border-[#525252]/50`}
           >
             {/* Hover Background Image with Dark Overlay */}
             <div

@@ -17,12 +17,12 @@ export default function WebinarSingleBlog() {
   return (
     <div>
       <NavBar />
-      <div className="md:max-w-[1400px] px-3 md:mx-auto"></div>
+      <div className="md:max-w-[1600px] px-3 md:mx-auto"></div>
 
       <VideoSection />
       <RTalkSection />
 
-      <div className="md:max-w-[1400px] px-3 md:mx-auto">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto">
         <Project />
         <MoreBlogs />
         <ContactSection />

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CareerTransformationSection() {
   return (
-    <section className="w-full py-12 bg-white">
+    <section className="w-full py-12 ">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center px-6 md:px-12">
         {/* Left side - Image with layered shapes */}
         <div className="relative w-full md:w-1/2 flex justify-center mb-8 md:mb-0">

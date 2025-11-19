@@ -47,7 +47,7 @@ export default function FaqSection() {
           ></path>
         </svg>
       </div>
-      <div className="md:max-w-[1400px] px-3 md:mx-auto mt-10">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto mt-10">
         {/* Heading */}
         {/* Animated Heading */}
         <motion.h2

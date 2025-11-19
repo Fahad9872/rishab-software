@@ -125,7 +125,7 @@ const SuccessStory = () => {
   return (
     <div className="md:py-20  py-10 bg-[#111111] text-[#E1E1E1]">
       <div className=" px-5 relative">
-        <div className="md:max-w-[1400px] mx-auto mb-5">
+        <div className="md:max-w-[1600px] mx-auto mb-5">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

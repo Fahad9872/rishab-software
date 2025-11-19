@@ -41,7 +41,7 @@ export default function BenefitsGrid() {
           {benefits.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-lg shadow p-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition"
+              className="border-2 border-[#525252]/50 rounded-lg shadow p-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition"
             >
               {item.icon}
               <h4 className="mt-4 text-base font-medium text-gray-800">

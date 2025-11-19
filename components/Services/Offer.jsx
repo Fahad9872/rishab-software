@@ -91,7 +91,7 @@ const Offer = () => {
   return (
     <div className="py-10">
       <div className="px-5">
-        <div className="md:max-w-[1400px] px-3 md:mx-auto relative">
+        <div className="md:max-w-[1600px] px-3 md:mx-auto relative">
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-3">
             Related Offerings

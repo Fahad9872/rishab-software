@@ -80,7 +80,7 @@ const Faq = () => {
         </svg>
       </div>
       {/* Heading */}
-      <div className="md:max-w-[1400px] px-3 md:mx-auto">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10">
           FAQ
         </h2>

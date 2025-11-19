@@ -143,7 +143,7 @@ const BlogSection = () => {
           {filteredCaseStudies.map((item) => (
             <div
               key={item.id}
-              className="border border-gray/50 rounded-2xl shadow-sm overflow-hidden flex flex-col transition hover:shadow-md bg-white p-5"
+              className="border-2 border-[#525252]/50 shadow-[0_0_80px_rgba(155,81,224,0.4)] bg-[#181818] text-[#E1E1E1] rounded-2xl overflow-hidden flex flex-col    p-5"
             >
               {/* Image */}
               <div className="relative w-full mb-3  flex items-center justify-center ">

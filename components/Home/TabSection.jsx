@@ -77,8 +77,7 @@ const caseStudies = [
   {
     id: 5,
     title: "Smart Manufacturing Platform",
-    description:
-      "Enabling IoT integration and real-time production monitoring",
+    description: "Enabling IoT integration and real-time production monitoring",
     image:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
     categories: ["IoT Consulting Services", "Automotive"],
@@ -154,96 +153,100 @@ export default function TabSection() {
         );
 
   return (
-    <div className="p-4">
-      {/* Breadcrumb */}
-      <div className="flex items-center gap-2 mb-5">
-        <p>Home</p>
-        <IoIosArrowBack className="rotate-180" />
-        <p>Our Work</p>
-      </div>
+    <div className="py-10 bg-[#111111] text-[#E1E1E1] ">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto">
+        {/* Breadcrumb */}
+        <div className="flex items-center gap-2 mb-5">
+          <p>Home</p>
+          <IoIosArrowBack className="rotate-180" />
+          <p>Our Work</p>
+        </div>
 
-      {/* Tabs */}
-      <div className="flex border-b border-gray-300">
-        {tabs.map((tab) => {
-          const isActive = activeTab === tab;
-          return (
-            <button
-              key={tab}
-              onClick={() => {
-                setActiveTab(tab);
-                setSelectedItems([]); // reset filters when switching tab
-              }}
-              className={`flex items-center justify-between px-4 py-2 -mb-px font-medium text-sm md:text-base border-2 py-3 w-[50%] ${
-                isActive
-                  ? "border-light-gray border-r-0 text-purple-500"
-                  : "border-light-gray text-gray-700"
-              }`}
-            >
-              <div>
-                {tab}
-                {tab === "Services" && isActive && selectedItems.length > 0
-                  ? ` (${selectedItems.length} Selected)`
-                  : ""}
-              </div>
-              <span className="mr-2">{isActive ? <FaMinus /> : <FaPlus />}</span>
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Filter Buttons */}
-      <div className="flex flex-wrap gap-2 mt-4">
-        {data.map((item) => {
-          const isSelected = selectedItems.includes(item);
-          return (
-            <button
-              key={item}
-              onClick={() => handleSelect(item)}
-              className={`px-4 py-2 border rounded-md text-sm md:text-base transition-colors duration-200 ${
-                item === "All"
-                  ? "border-gray-500 text-gray-700"
-                  : isSelected
-                  ? "border-purple-500 text-purple-500"
-                  : "border-gray-500 text-gray-700 hover:border-purple-500 hover:text-purple-500"
-              }`}
-            >
-              {item}
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Case Studies Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-        {filteredCaseStudies.map((study) => (
-          <div
-            key={study.id}
-            className="relative overflow-hidden rounded-lg group shadow-lg"
-          >
-            {/* Background Image */}
-            <img
-              src={study.image}
-              alt={study.title}
-              className="w-full h-[340px] object-cover"
-            />
-
-            {/* Overlay */}
-            <div className="absolute left-2 right-2 bottom-[30%] h-[80px] overflow-hidden bg-white p-4 rounded transform translate-y-full group-hover:h-[92%] group-hover:bottom-2 group-hover:top-3 group-hover:translate-y-0 transition-all duration-300 shadow-lg">
-              <h3 className="text-lg font-semibold mb-2">{study.title}</h3>
-              <p className="text-sm hidden group-hover:block text-gray-700 mb-3">
-                {study.description}
-              </p>
-              <button className="px-4 hidden group-hover:block py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded">
-                View More
+        {/* Tabs */}
+        <div className="flex border-b border-gray-300">
+          {tabs.map((tab) => {
+            const isActive = activeTab === tab;
+            return (
+              <button
+                key={tab}
+                onClick={() => {
+                  setActiveTab(tab);
+                  setSelectedItems([]); // reset filters when switching tab
+                }}
+                className={`flex items-center justify-between px-4 py-2 -mb-px font-medium text-sm md:text-base border-2 py-3 w-[50%] ${
+                  isActive
+                    ? "border-light-gray border-r-0 text-purple-500"
+                    : "border-light-gray text-gray-700"
+                }`}
+              >
+                <div>
+                  {tab}
+                  {tab === "Services" && isActive && selectedItems.length > 0
+                    ? ` (${selectedItems.length} Selected)`
+                    : ""}
+                </div>
+                <span className="mr-2">
+                  {isActive ? <FaMinus /> : <FaPlus />}
+                </span>
               </button>
+            );
+          })}
+        </div>
+
+        {/* Filter Buttons */}
+        <div className="flex flex-wrap gap-2 mt-4">
+          {data.map((item) => {
+            const isSelected = selectedItems.includes(item);
+            return (
+              <button
+                key={item}
+                onClick={() => handleSelect(item)}
+                className={`px-4 py-2 border rounded-md text-sm md:text-base transition-colors duration-200 ${
+                  item === "All"
+                    ? "border-gray-500 text-gray-700"
+                    : isSelected
+                    ? "border-purple-500 text-purple-500"
+                    : "border-gray-500 text-gray-700 hover:border-purple-500 hover:text-purple-500"
+                }`}
+              >
+                {item}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Case Studies Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+          {filteredCaseStudies.map((study) => (
+            <div
+              key={study.id}
+              className="relative overflow-hidden rounded-lg group shadow-lg"
+            >
+              {/* Background Image */}
+              <img
+                src={study.image}
+                alt={study.title}
+                className="w-full h-[340px] object-cover"
+              />
+
+              {/* Overlay */}
+              <div className="absolute left-2 right-2 bottom-[30%] h-[80px] overflow-hidden bg-white p-4 rounded transform translate-y-full group-hover:h-[92%] group-hover:bottom-2 group-hover:top-3 group-hover:translate-y-0 transition-all duration-300 shadow-lg">
+                <h3 className="text-lg font-semibold mb-2">{study.title}</h3>
+                <p className="text-sm hidden group-hover:block text-gray-700 mb-3">
+                  {study.description}
+                </p>
+                <button className="px-4 hidden group-hover:block py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded">
+                  View More
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
-        {filteredCaseStudies.length === 0 && (
-          <p className="col-span-full text-center text-gray-600">
-            No case studies found for selected filters.
-          </p>
-        )}
+          ))}
+          {filteredCaseStudies.length === 0 && (
+            <p className="col-span-full text-center text-gray-600">
+              No case studies found for selected filters.
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );

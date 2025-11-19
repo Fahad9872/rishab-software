@@ -70,7 +70,7 @@ const ListeningSection = () => {
   const [selectedSection, setSelectedSection] = useState(listeningSections[0]);
 
   return (
-    <div className="md:max-w-[1400px] px-3 mx-auto bg-gray-50">
+    <div className="md:max-w-[1600px] px-3 mx-auto bg-gray-50">
       <NavBar />
 
       {/* Intro Section */}

@@ -37,7 +37,7 @@ const industries = [
 ];
 export default function OtherIndustries() {
   return (
-    <div className="">
+    <div className="bg-[#181818] text-[#E1E1E1]">
       <NavBar />
       <section className="relative w-full h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-[#e3275d] via-[#9b2fa8] to-[#3a3aff]">
         {/* Background arcs overlay */}
@@ -103,13 +103,13 @@ export default function OtherIndustries() {
           >
             <path
               d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"
-              className="fill-white"
+              className="fill-[#181818]"
             ></path>
           </svg>
         </div>
       </section>
-      <div className="md:max-w-[1400px] px-3 md:mx-auto">
-        <div className="mb-10">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto">
+        <div className="my-10">
           {/* Breadcrumb */}
           <div className="text-[18px] text-gray-600 mb-6">
             <span className="text-gray-500">Home</span>{" "}
@@ -122,7 +122,7 @@ export default function OtherIndustries() {
           {industries.map((item, index) => (
             <div
               key={item.id}
-              className="items-center bg-purple-50 rounded-2xl p-6 md:p-10 mb-10"
+              className="items-center border-2 border-[#525252]/50 shadow-[0_0_80px_rgba(155,81,224,0.4)] bg-[#181818] text-[#E1E1E1] rounded-2xl p-6 md:p-10 mb-10"
             >
               {/* Alternate image position */}
               {index % 2 === 0 ? (
@@ -135,7 +135,7 @@ export default function OtherIndustries() {
                     <p className="text-gray-700 leading-relaxed mb-5">
                       {item.description}
                     </p>
-                    <button className="px-5 py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-500 text-white text-sm font-medium hover:opacity-90 transition">
+                    <button className="px-5 py-2 rounded-md bg-[#9B51E0] text-white transition duration-300 hover:bg-[#BB86FC] hover:shadow-xl hover:shadow-[#9B51E0]/50 active:scale-95 shadow-lg text-sm font-medium hover:opacity-90 transition">
                       Explore
                     </button>
                   </div>
@@ -168,7 +168,7 @@ export default function OtherIndustries() {
                     <p className="text-gray-700 leading-relaxed mb-5">
                       {item.description}
                     </p>
-                    <button className="px-5 py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-500 text-white text-sm font-medium hover:opacity-90 transition">
+                    <button className="px-5 py-2 rounded-md bg-[#9B51E0] text-white transition duration-300 hover:bg-[#BB86FC] hover:shadow-xl hover:shadow-[#9B51E0]/50 active:scale-95 shadow-lg text-sm font-medium hover:opacity-90 transition">
                       Explore
                     </button>
                   </div>

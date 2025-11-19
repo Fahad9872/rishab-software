@@ -49,7 +49,7 @@ export default function TouchPoint() {
     <section
       ref={containerRef}
       style={{ height: sectionHeight }}
-      className="relative bg-black"
+      className="relative "
     >
       <div className="sticky top-0 md:h-screen md:pt-0 pt-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4 sm:px-5 md:px-8 gap-8 md:gap-12">
         {/* Left Side Text */}

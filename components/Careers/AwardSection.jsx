@@ -118,7 +118,7 @@ const AwardSection = () => {
   };
 
   return (
-    <div className="py-10 bg-[#f2f4fd]">
+    <div className="py-10 bg-[#111111] text-[#E1E1E1]">
       <div className=" px-5 relative max-w-[1400px] mx-auto">
         <Slider {...settings}>
           {data.map((item) => (

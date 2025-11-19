@@ -44,7 +44,7 @@ export default function ResumeForm() {
         {/* Right form */}
         <form
           onSubmit={handleSubmit}
-          className="bg-white p-6 rounded-xl shadow-md border border-purple-400"
+          className=" p-6 rounded-xl shadow-md border border-purple-400"
         >
           <input
             type="text"

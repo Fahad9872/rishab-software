@@ -78,7 +78,7 @@ export default function IndustryDemands() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-[#F8FAFC] p-6 rounded-xl md:h-[300px] h-[430px] shadow-md flex flex-col justify-between text-center"
+              className="border-2 border-[#525252]/50 p-6 rounded-xl md:h-[300px] h-[430px] shadow-md flex flex-col justify-between text-center"
             >
               <img
                 src={t.img}

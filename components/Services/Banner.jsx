@@ -15,7 +15,7 @@ export default function Banner({ name, image }) {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Main content */}
-      <div className="relative z-10 text-white flex flex-col lg:flex-row items-center justify-center md:h-full md:max-w-[1400px] mx-auto">
+      <div className="relative z-10 text-white flex flex-col lg:flex-row items-center justify-center md:h-full md:max-w-[1600px] mx-auto">
         {/* Text content */}
         <div className="lg:w-7/12 py-5 lg:py-16">
           <p className="text-[24px] md:text-[45px] font-semibold md:leading-[50px] leading-[30px] mb-6">

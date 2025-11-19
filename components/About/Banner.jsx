@@ -70,7 +70,7 @@ const Banner = () => {
           >
             <path
               d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"
-              className="fill-white"
+              className="fill-[#181818]"
             ></path>
           </svg>
         </div>
@@ -148,7 +148,7 @@ export default Banner;
     >
       <path
         d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"
-        className="fill-white"
+        className="fill-[#181818]"
       ></path>
     </svg>
   </div>

@@ -18,7 +18,7 @@ export default function Home() {
       <BannerSection />
       <Experience />
       <div className=" ">
-        <div className=" md:max-w-[1400px] px-3 py-5 md:mx-auto">
+        <div className=" md:max-w-[1600px] px-3 py-5 md:mx-auto">
           {/* <Carousel itemsToShow={1} showArrows={false} loop={true}>
           <Banner />
           <Banner2 />
@@ -28,13 +28,13 @@ export default function Home() {
       </div>
       <SuccessStory />
 
-      <div className="md:max-w-[1400px] px-3 md:mx-auto">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto">
         <Vision />
       </div>
       <div className=" bg-[#111111] text-[#E1E1E1]">
         <ClientChatter />
       </div>
-      <div className="md:max-w-[1400px] px-3 md:mx-auto">
+      <div className="md:max-w-[1600px] px-3 md:mx-auto">
         <LatestInsights />
       </div>
 

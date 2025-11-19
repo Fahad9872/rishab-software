@@ -189,7 +189,7 @@ const successStories = [
 
 const SuccessStories = () => {
   return (
-    <div className="md:max-w-[1400px] px-3 md:mx-auto">
+    <div className="md:max-w-[1600px] px-3 md:mx-auto">
       <NavBar />
       <div className="relative md:h-[400px] md:py-0 py-20 flex flex-col items-center md:justify-center md:text-center text-white px-5 overflow-hidden">
         {/* Background Image with Dark Overlay */}

@@ -31,7 +31,7 @@ export default function Innovate() {
             passionate team!
           </p>
 
-          <button className="mt-6 px-6 py-3 rounded-md bg-gradient-to-r from-purple-600 to-pink-500 text-white font-medium shadow-md hover:opacity-90 transition">
+          <button className="mt-6 px-6 py-3 rounded-md bg-[#9B51E0] text-white transition duration-300 hover:bg-[#BB86FC] hover:shadow-xl hover:shadow-[#9B51E0]/50 active:scale-95 shadow-lg font-medium shadow-md hover:opacity-90 transition">
             Explore Opportunities to Excel
           </button>
         </div>

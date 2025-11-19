@@ -10,7 +10,7 @@ export default function ContactSection() {
   const [date, setDate] = useState(new Date());
 
   return (
-    <section className="w-full px-5 py-16 bg-[#111111] text-[#E1E1E1] shadow-[0_0_80px_rgba(155,81,224,0.4)] overflow-hidden border-2 border-[#525252]/50 rounded-[30px] shadow-md md:max-w-[1400px] px-3 md:mx-auto">
+    <section className="w-full px-5 py-16 bg-[#111111] text-[#E1E1E1] shadow-[0_0_80px_rgba(155,81,224,0.4)] overflow-hidden border-2 border-[#525252]/50 rounded-[30px] shadow-md md:max-w-[1600px] px-3 md:mx-auto">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left Side with Graphics */}
         {/* <div className="flex items-center justify-center relative">

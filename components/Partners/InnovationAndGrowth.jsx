@@ -63,9 +63,9 @@ function ServiceAccordion({ service }) {
   return (
     <div className=" rounded-lg mb-4">
       <button
-        className={`w-full flex justify-between items-center px-4 py-3 text-left font-medium
-    ${isOpen ? "bg-purple-200 text-purple-800" : "bg-purple-50 "} 
-    hover:bg-purple-100`}
+        className={`w-full flex justify-between items-center px-4 py-3 text-left font-medium border-2 border-[#525252]/50
+    ${isOpen ? "" : ""} 
+    `}
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{service.title}</span>
@@ -73,7 +73,7 @@ function ServiceAccordion({ service }) {
       </button>
 
       {isOpen && (
-        <div className="p-4 bg-white md:flex gap-5">
+        <div className="p-4 border-t-0 border-2 border-[#525252]/50 md:flex gap-5">
           {service.iconUrl && (
             <img
               src={service.iconUrl}

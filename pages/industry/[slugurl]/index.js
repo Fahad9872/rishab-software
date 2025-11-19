@@ -73,7 +73,7 @@ export default function Adtech({ slugurl }) {
       />
 
       <div className="  bg-[#111111] text-[#E1E1E1]">
-        <div className="py-10 md:max-w-[1400px] px-3 md:mx-auto">
+        <div className="py-10 md:max-w-[1600px] px-3 md:mx-auto">
           {/* Breadcrumb */}
           <div className="text-[18px] text-gray-600 mb-6">
             <span className="text-gray-500">Home</span>{" "}

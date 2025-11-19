@@ -62,7 +62,7 @@ export default function History() {
   const [activeIndex, setActiveIndex] = useState(1); // Default active tab
 
   return (
-    <div className="py-12 px-5 text-white bg-black">
+    <div className="py-12 px-5 text-white ">
       <div className="w-full max-w-[1400px] mx-auto ">
         <h2 className="text-center text-3xl font-semibold mb-8">
           Rishabh History
