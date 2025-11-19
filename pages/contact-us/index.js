@@ -7,7 +7,7 @@ import React from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const index = () => {
   return (
-    <div>
+    <div className="bg-[#181818] text-[#E1E1E1]">
       <NavBar />
       <ContactForm />
       <OfficeLocations />
