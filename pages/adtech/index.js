@@ -24,7 +24,7 @@ const heroData = {
   buttonText: "Get Started",
   gradient: "from-purple-600 to-pink-500",
   textColor: "text-white",
-  height: 500, // px
+  height: 500,
 };
 
 export default function Adtech() {
