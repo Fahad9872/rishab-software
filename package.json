@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
+    "pages:build": "npm run build && npx @opennextjs/cloudflare@latest build",
+    "deploy": "opennextjs-cloudflare deploy",
+    "start": "next start"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
